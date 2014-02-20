@@ -12,11 +12,12 @@ Follow the instructions line-by-line.
 [NO OUTPUT]
 ----------
 ==========
-2. Find out if mtec1002-lab-02 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
+2. Find out if mtec1002-lab-03 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
 
 (See steps 1-8 in http://foureyes.github.io/mtec1002-spring2014/labs/03/lab-03-part-02-working-with-files.txt)
 [NO OUTPUT]
 ----------
+
 ==========
 3. Change your directory mtec1002-lab-03
 [NO OUTPUT]
@@ -36,8 +37,8 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
-
-
+ent-v321-012:my_files student$ ls
+foo.txt
 
 ==========
 7. Create another new file using touch.
@@ -45,15 +46,13 @@ Copy and paste the output below.
 $ touch bar.txt
 ----------
 
-
-
 ==========
 8. List the files in this directory using the flag that gives the most details.
 
 Copy and paste the output below.
 ----------
-
-
+ent-v321-012:my_files student$ ls
+bar.txt	foo.txt
 
 ==========
 9. Create a copy of bar.txt called baz.txt and then list the files again.
@@ -61,22 +60,28 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
-
-
+cp bar.txt baz.txt
+ent-v321-012:my_files student$ cp bar.txt baz.txt
+ent-v321-012:my_files student$ ls
+bar.txt	baz.txt	foo.txt
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+rm baz.txt
+ls
+baz.txt	foo.txt
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
-
-
+mv foo.txt qux.txt
+baz.txt	qux.txt
 
 ==========
 12. Go up one directory so that you're in ~/mtec1002-lab-03.
@@ -90,7 +95,8 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
+ent-v321-012:my_files student$ rmdir my_files
+rmdir: my_files: No such file or directory
 
 
 ==========
@@ -98,8 +104,8 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
-
-
+ent-v321-012:my_files student$ rm my_files
+rm: my_files: No such file or directory
 
 ==========
 15. MAKE SURE YOU'RE IN THE mtec1002-lab-03 directory!  
@@ -120,7 +126,7 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
+It brought me to the my_files folder
 
 
 ==========
@@ -132,9 +138,6 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
-
-
 ==========
 18. Using the same file again!
 
@@ -144,9 +147,7 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
-
-
+Subscribe to our email newsletter to hear about new eBooks.
 ==========
 19. Using the same file...
 
@@ -157,7 +158,8 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
 
-
+less pg1232.txt
+more pg1232.txt
 
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
@@ -175,4 +177,13 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
+----------
+
+
+==========
+OPTIONAL
+
+23.  Make sure you're in the books/other folder.  Copy all of the txt files from that folder to your home directory using wildcard matching.
+
+Write the command that you used below.
 ----------
