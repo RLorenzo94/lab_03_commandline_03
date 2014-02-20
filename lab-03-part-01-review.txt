@@ -1,4 +1,4 @@
-Lab - Review
+Lab #3 Part 1/Lab - Review
 ==========
 Follow the instructions line-by-line.  
 
@@ -15,7 +15,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-
+cd ~
 
 
 ==========
@@ -23,7 +23,7 @@ Write the command that you used to do this below:
 
 Write the command that you used to do this - as well as its output - below :
 ----------
-
+/Users/student
 
 
 ==========
@@ -31,15 +31,16 @@ Write the command that you used to do this - as well as its output - below :
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
+ls
+Desktop		Movies		Public		vms
+Documents	Music		Sites
+Downloads	My Song.band	Things
+Library		Pictures	VirtualBox VMs
 
 
 ==========
 4. If there are directories or files in your home directory that have the word mtec1002 in them, list them below (otherwise skip this step):
 ----------
-
-
-
 ==========
 5. Delete these directories from your home folder by using this command:
 
@@ -51,9 +52,6 @@ $ rm -rf mtec1002-labs-02
 
 (skip if these directories don't exist)
 ----------
-
-
-
 ==========
 6.  A compressed archive (.tar.gz) of the lab files can be found at this url: 
 
@@ -65,15 +63,27 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
+curl -o Mtech1002-lab-03.tar.gz http://foureyes.github.io/mtec1002-spring2014/labs/03/mtec1002-lab-03.tar.gz
 
-
-
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--100  898k  100  898k    0     0  4408k      0 --:--:-- --:--:-- --:--:-- 4423k
+ent-v321-012:~ student$ 
 ==========
 7.  Uncompress the file that you just downloaded.
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
+tar -xvf mtech1002-lab-03.tar.gz
+x mtec1002-lab-03/logs/access-15.log
+x mtec1002-lab-03/logs/access-150.log
+x mtec1002-lab-03/logs/access-151.log
+x mtec1002-lab-03/logs/access-152.log
+x mtec1002-lab-03/logs/access-158.log
+x mtec1002-lab-03/logs/access-159.log
+x mtec1002-lab-03/logs/access-16.log
+x mtec1002-lab-03/logs/access-160.log
+x mtec1002-lab-03/logs/access-161.log
 
 
 ==========
@@ -88,15 +98,17 @@ Otherwise...
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
-
+mtech1002-lab-03/
+ent-v321-012:~ student$ mtec1002-lab-03/
+-bash: mtec1002-lab-03/: is a directory
 
 ==========
 9.  What directories are in the mtec1002-lab-03 folder?
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
+ls mtech1002-lab-03 
+books	logs	web
 
 
 ==========
